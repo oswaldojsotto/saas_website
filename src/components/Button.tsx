@@ -1,13 +1,20 @@
 import React from "react";
 
 type Props = {
-  text: string;
+  children?: React.ReactNode;
+  style: "filled" | "empty";
+  icon?: React.ReactNode;
 };
 
-const Button = ({ text }: Props) => {
+const Button = ({ children, style }: Props) => {
   return (
-    <div className=" cursor-pointer py-2 tracking-tight px-4 flex justify-center items-center border border-black rounded-xl bg-black text-white">
-      {text}
+    <div
+      className={`gap-2 antialiased cursor-pointer py-2 tracking-tight px-4 flex justify-center items-center border  rounded-xl  ${
+        style === "empty"
+          ? "bg-white text-black border-white"
+          : "bg-black text-white border-black"
+      }`}>
+      {children}
     </div>
   );
 };
