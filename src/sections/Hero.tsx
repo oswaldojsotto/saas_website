@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import React from "react";
+import ArrowRight from "@/assets/arrow-right.svg";
 
 const Hero = () => {
   return (
@@ -17,7 +18,11 @@ const Hero = () => {
       </p>
       <div className="flex w-fit gap-2">
         <Button style="filled" text="Get Started" />
-        <Button style="empty" text="Learn More" />
+        <Button
+          style="empty"
+          text="Learn More"
+          icon={<ArrowRight className="h-4 w-4" />}
+        />
       </div>
     </div>
   );
