@@ -1,12 +1,12 @@
 import React from "react";
 
 type Props = {
-  text: string;
+  children?: React.ReactNode;
   style: "filled" | "empty";
   icon?: React.ReactNode;
 };
 
-const Button = ({ text, style, icon }: Props) => {
+const Button = ({ children, style }: Props) => {
   return (
     <div
       className={`gap-2 antialiased cursor-pointer py-2 tracking-tight px-4 flex justify-center items-center border  rounded-xl  ${
@@ -14,8 +14,7 @@ const Button = ({ text, style, icon }: Props) => {
           ? "bg-white text-black border-white"
           : "bg-black text-white border-black"
       }`}>
-      {text}
-      {icon ? icon : ""}
+      {children}
     </div>
   );
 };

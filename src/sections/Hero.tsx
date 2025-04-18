@@ -17,12 +17,13 @@ const Hero = () => {
         efforts, and celebrate your successes.
       </p>
       <div className="flex w-fit gap-2">
-        <Button style="filled" text="Get Started" />
-        <Button
-          style="empty"
-          text="Learn More"
-          icon={<ArrowRight className="h-4 w-4" />}
-        />
+        <Button style="filled">
+          <p>Get Started</p>
+        </Button>
+        <Button style="empty">
+          <p>Learn More</p>
+          <ArrowRight className="h-4 w-4" />
+        </Button>
       </div>
     </div>
   );

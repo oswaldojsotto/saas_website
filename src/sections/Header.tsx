@@ -36,7 +36,9 @@ const Header = () => {
             <a href="#">Customers</a>
             <a href="#">Updates</a>
             <a href="#">Help</a>
-            <Button text="Get for free" style="filled" />
+            <Button style="filled">
+              <p>Get for free</p>
+            </Button>
           </ul>
         </nav>
       </div>
