@@ -6,7 +6,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 const Header = () => {
   return (
-    <header className="sticky top-0 ">
+    <header className="fixed top-0 w-full ">
       <div className="w-full bg-black px-8 flex justify-center py-3 items-center text-sm gap-2 ">
         <div className="inline-flex justify-center items-center gap-4">
           <p className="text-white/60 hidden lg:block">
@@ -21,7 +21,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full inline-flex justify-between items-center gap-2 px-4 my-3 lg:px-32">
+      <div className="w-full inline-flex justify-between items-center gap-2 px-4 my-3 lg:px-32 bg-transparent">
         <Image
           src={Logo}
           alt="SaaS Logo"
@@ -36,7 +36,7 @@ const Header = () => {
             <a href="#">Customers</a>
             <a href="#">Updates</a>
             <a href="#">Help</a>
-            <Button text="Get for free" />
+            <Button text="Get for free" style="filled" />
           </ul>
         </nav>
       </div>
