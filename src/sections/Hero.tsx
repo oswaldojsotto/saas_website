@@ -9,7 +9,7 @@ import Noodle from "@/assets/noodle.png";
 const Hero = () => {
   return (
     <section className="flex flex-col md:h-dvh md:flex-row w-full h-auto bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#EAEEFE_100%)] px-4">
-      <div className="flex flex-col  gap-4 md:mt-0 md:justify-center mt-30  md:mt-0">
+      <div className="flex flex-col  gap-4 md:mt-0 md:justify-center mt-30">
         <p className=" text-sm border font-semibold border-black/10 w-fit flex justify-center items-center py-2 px-4 rounded-xl">
           Version 2.0 is here
         </p>
