@@ -6,7 +6,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full ">
+    <header className="fixed top-0 w-full z-[10]">
       <div className="w-full bg-black px-8 flex justify-center py-3 items-center text-sm gap-2 ">
         <div className="inline-flex justify-center items-center gap-4">
           <p className="text-white/60 hidden lg:block">
@@ -21,7 +21,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full inline-flex justify-between items-center gap-2 px-4 my-3 lg:px-32 bg-transparent">
+      <div className="w-full inline-flex justify-between items-center gap-2 px-4 py-3  backdrop-blur ">
         <Image
           src={Logo}
           alt="SaaS Logo"
