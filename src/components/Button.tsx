@@ -11,7 +11,7 @@ const Button = ({ children, style }: Props) => {
     <div
       className={`gap-2 antialiased cursor-pointer py-2 tracking-tight px-4 flex justify-center items-center border  rounded-xl  ${
         style === "empty"
-          ? "bg-white text-black border-white"
+          ? "bg-transparent text-black border-none"
           : "bg-black text-white border-black"
       }`}>
       {children}
