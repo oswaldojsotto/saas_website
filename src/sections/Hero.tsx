@@ -46,7 +46,7 @@ const Hero = () => {
         <Image
           src={Noodle}
           alt="Noodle Image"
-          className="  hidden lg:block md:absolute h-[180px] w-[180px] object-contain -bottom-4 right-1 z-30 rotate-30"
+          className="  hidden lg:block md:absolute h-[180px] w-[180px] object-contain -bottom-4 right-1  rotate-30"
         />
       </div>
     </section>
