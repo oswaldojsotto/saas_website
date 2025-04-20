@@ -16,8 +16,7 @@ const Showcase = () => {
         <h2 className="flex justify-center items-center px-4 text-center">
           Effortlessly turn your ideas into a fully
           functional, responsive, no-code SaaS website in
-          just minutes with the set of free components for
-          Framer.
+          just minutes with this template.
         </h2>
       </div>
       <div className="image">
