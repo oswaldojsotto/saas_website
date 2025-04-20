@@ -8,7 +8,7 @@ import Noodle from "@/assets/noodle.png";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:h-dvh md:flex-row w-full h-auto bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#EAEEFE_100%)] px-4">
+    <section className="flex flex-col md:h-[100dvh] md:flex-row w-full h-auto bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#EAEEFE_90%)] px-4 z-10">
       <div className="flex flex-col  gap-4 md:mt-0 md:justify-center mt-30">
         <p className=" text-sm border font-semibold border-black/10 w-fit flex justify-center items-center py-2 px-4 rounded-xl">
           Version 2.0 is here
@@ -35,7 +35,7 @@ const Hero = () => {
         <Image
           src={CogImage}
           alt="Cog Image"
-          className="object-contain md:ml-32  lg:ml-0 md:scale-[1.2] lg:scale-[1] lg:max-h-[90%] lg:mt-20"
+          className="object-contain md:ml-32  lg:ml-0 md:scale-[1.2] lg:scale-[1] lg:max-h-[90%] lg:mt-20 my-10"
         />
 
         <Image
@@ -46,7 +46,7 @@ const Hero = () => {
         <Image
           src={Noodle}
           alt="Noodle Image"
-          className="  hidden lg:block md:absolute h-[180px] w-[180px] object-contain -bottom-10 right-1 overflow-visible rotate-30"
+          className="  hidden lg:block md:absolute h-[180px] w-[180px] object-contain -bottom-4 right-1  rotate-30"
         />
       </div>
     </section>
