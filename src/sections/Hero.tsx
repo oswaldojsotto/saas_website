@@ -22,10 +22,10 @@ const Hero = () => {
           efforts, and celebrate your successes.
         </p>
         <div className="flex w-fit gap-2">
-          <Button style="filled">
+          <Button style="black">
             <p>Get Started</p>
           </Button>
-          <Button style="empty">
+          <Button style="trasparent">
             <p>Learn More</p>
             <ArrowRight className="h-4 w-4" />
           </Button>

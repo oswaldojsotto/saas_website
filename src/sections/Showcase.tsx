@@ -6,7 +6,7 @@ import tubeImage from "@/assets/tube.png";
 
 const Showcase = () => {
   return (
-    <section className="max-w-full overflow-hidden">
+    <section className="max-w-full overflow-x-clip">
       <div className="w-full flex flex-col justify-center">
         <h3 className="w-full flex justify-center items-center font-normal py-2 ">
           Boost your productivity
