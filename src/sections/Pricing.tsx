@@ -1,5 +1,5 @@
-import PricingCard from "@/components/PricingCard";
 import React from "react";
+import PricingCard from "@/components/PricingCard";
 import {
   freeTier,
   proTier,
@@ -8,7 +8,7 @@ import {
 
 const Pricing = () => {
   return (
-    <section className="max-w-full overflow-x-clip">
+    <section className="max-w-full overflow-x-clip mt-20">
       <div className="w-full flex flex-col justify-center">
         <h3 className="w-full flex justify-center items-center font-normal py-2 ">
           Boost your productivity
@@ -25,8 +25,8 @@ const Pricing = () => {
         </h2>
       </div>
 
-      <div className="flex justify-center  px-2">
-        <div className="flex  flex-col md:flex-row items-center justify-center  w-full  ">
+      <div className="flex justify-center px-2">
+        <div className="flex flex-col md:flex-row items-center justify-center  w-full">
           <PricingCard
             title="Free"
             color="white"

@@ -22,7 +22,7 @@ const PricingCard = ({
 }: PricingCardProps) => {
   return (
     <div
-      className={` md:scale-[0.9] px-8 my-8 flex flex-col h-auto rounded-2xl w-full max-w-[362px]  ${
+      className={`scale-[1] md:scale-[0.9] lg:scale-[1] px-8 my-8 flex flex-col h-auto rounded-2xl w-full max-w-[362px]  ${
         color === "black"
           ? "bg-black text-white"
           : "bg-white text-black"
