@@ -21,7 +21,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full inline-flex justify-between items-center gap-2 px-4 py-3  backdrop-blur ">
+      <div className="w-full inline-flex justify-between items-center gap-2 px-4 py-3 backdrop-blur ">
         <Image
           src={Logo}
           alt="SaaS Logo"
@@ -36,7 +36,7 @@ const Header = () => {
             <a href="#">Customers</a>
             <a href="#">Updates</a>
             <a href="#">Help</a>
-            <Button style="filled">
+            <Button style="black">
               <p>Get for free</p>
             </Button>
           </ul>
