@@ -1,6 +1,10 @@
 import PricingCard from "@/components/PricingCard";
 import React from "react";
-import { freeTier } from "@/data/Features";
+import {
+  freeTier,
+  proTier,
+  businessTier,
+} from "@/data/Features";
 
 const Pricing = () => {
   return (
@@ -22,7 +26,7 @@ const Pricing = () => {
       </div>
 
       <div className="flex justify-center  px-2">
-        <div className="flex  flex-col md:flex-row items-center justify-center  w-full bg-amber-600 ">
+        <div className="flex  flex-col md:flex-row items-center justify-center  w-full  ">
           <PricingCard
             title="Free"
             color="white"
@@ -38,13 +42,15 @@ const Pricing = () => {
             price={9}
             buttonText="Sign Up Now"
             buttonStyle="white"
+            features={proTier}
           />
           <PricingCard
             title="Business"
-            color="black"
+            color="white"
             price={19}
             buttonText="Start Free Trial"
             buttonStyle="black"
+            features={businessTier}
           />
         </div>
       </div>
