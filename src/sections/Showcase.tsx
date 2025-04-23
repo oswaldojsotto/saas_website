@@ -6,7 +6,7 @@ import tubeImage from "@/assets/tube.png";
 
 const Showcase = () => {
   return (
-    <section className="max-w-full overflow-x-clip">
+    <section className="max-w-full  overflow-x-clip bg-[radial-gradient(ellipse_1700%_100%_at_bottom,#c8d0ec,#EAEEFE_20%)]">
       <div className="w-full flex flex-col justify-center">
         <h3 className="w-full flex justify-center items-center font-normal py-2 ">
           Boost your productivity
