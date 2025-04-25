@@ -3,3 +3,7 @@
 .logo-image {
    @apply h-8 w-auto
 }
+
+.testimonial-fade {
+  @apply [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]
+}
