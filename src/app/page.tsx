@@ -1,4 +1,5 @@
 import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Pricing from "@/sections/Pricing";
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 }
