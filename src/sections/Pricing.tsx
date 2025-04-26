@@ -25,34 +25,32 @@ const Pricing = () => {
         </h2>
       </div>
 
-      <div className="flex justify-center px-2">
-        <div className="flex flex-col md:flex-row items-center justify-center  w-full">
-          <PricingCard
-            title="Free"
-            color="white"
-            price={0}
-            buttonText="Start Free Trial"
-            buttonStyle="black"
-            features={freeTier}
-          />
-          <PricingCard
-            title="Pro"
-            color="black"
-            popular
-            price={9}
-            buttonText="Sign Up Now"
-            buttonStyle="white"
-            features={proTier}
-          />
-          <PricingCard
-            title="Business"
-            color="white"
-            price={19}
-            buttonText="Start Free Trial"
-            buttonStyle="black"
-            features={businessTier}
-          />
-        </div>
+      <div className="flex gap-4 mx-4 h-full mt-4 flex-col md:flex-row justify-center items-center md:items-end">
+        <PricingCard
+          title="Free"
+          color="white"
+          price={0}
+          buttonText="Start Free Trial"
+          buttonStyle="black"
+          features={freeTier}
+        />
+        <PricingCard
+          title="Pro"
+          color="black"
+          popular
+          price={9}
+          buttonText="Sign Up Now"
+          buttonStyle="white"
+          features={proTier}
+        />
+        <PricingCard
+          title="Business"
+          color="white"
+          price={19}
+          buttonText="Start Free Trial"
+          buttonStyle="black"
+          features={businessTier}
+        />
       </div>
     </section>
   );
