@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import CheckMark from "@/assets/check.svg";
+import { motion } from "motion/react";
 
 type PricingCardProps = {
   title: string;
@@ -36,7 +37,24 @@ const PricingCard = ({
           }`}>
           {title}
         </h1>
-        {popular ? <p>Popular</p> : null}
+        {popular ? (
+          <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/40">
+            {" "}
+            <motion.span
+              className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%] text-transparent bg-clip-text font-semibold"
+              animate={{
+                backgroundPositionX: "100%",
+                transition: {
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "loop",
+                  duration: 1,
+                },
+              }}>
+              Popular
+            </motion.span>
+          </div>
+        ) : null}
       </div>
       <div className="my-8">
         <div className="text-6xl font-bold">

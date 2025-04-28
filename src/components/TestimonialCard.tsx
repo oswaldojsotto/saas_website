@@ -15,7 +15,7 @@ const TestimonialCard = ({
   user,
 }: TestimonialCardProps) => {
   return (
-    <div className=" scale-[1] md:scale-[0.9] lg:scale-[1] px-8 my-8 py-4 flex flex-col h-auto rounded-2xl w-full max-w-[322px] bg-white text-black">
+    <div className=" scale-[1] md:scale-[0.9] lg:scale-[1] px-8 my-8 py-4  h-auto rounded-2xl w-full max-w-[322px] bg-white text-black drop-shadow-xl flex flex-col gap-4">
       <p>{text}</p>
       <div className="flex gap-4 mt-2">
         <Image

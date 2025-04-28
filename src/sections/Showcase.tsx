@@ -1,12 +1,33 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import productImage from "@/assets/product-image.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
+import {
+  motion,
+  useScroll,
+  useTransform,
+} from "motion/react";
 
 const Showcase = () => {
+  const productRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: productRef,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [150, -180]
+  );
+
   return (
-    <section className="max-w-full  overflow-x-clip bg-[radial-gradient(ellipse_1700%_100%_at_bottom,#c8d0ec,#EAEEFE_20%)]">
+    <section
+      ref={productRef}
+      className="max-w-full  overflow-x-clip bg-[radial-gradient(ellipse_1700%_100%_at_bottom,#c8d0ec,#EAEEFE_20%)]">
       <div className="w-full flex flex-col justify-center">
         <h3 className="w-full flex justify-center items-center font-normal py-2 ">
           Boost your productivity
@@ -27,19 +48,21 @@ const Showcase = () => {
           src={productImage}
           alt="product image"
         />
-        <Image
+        <motion.img
           className=" absolute -right-32 -top-28 hidden md:block overflow-hidden"
-          src={pyramidImage}
+          src={pyramidImage.src}
           alt="pyramid image"
           width={262}
           height={262}
+          style={{ translateY: translateY }}
         />
-        <Image
+        <motion.img
           className="absolute bottom-20 -left-32 hidden md:block overflow-hidden"
-          src={tubeImage}
+          src={tubeImage.src}
           alt="tube image"
           width={262}
           height={262}
+          style={{ translateY: translateY }}
         />
       </div>
     </section>
