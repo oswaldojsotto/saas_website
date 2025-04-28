@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import CheckMark from "@/assets/check.svg";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 type PricingCardProps = {
   title: string;

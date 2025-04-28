@@ -8,7 +8,7 @@ import {
   motion,
   useScroll,
   useTransform,
-} from "framer-motion";
+} from "motion/react";
 
 const Showcase = () => {
   const productRef = useRef(null);

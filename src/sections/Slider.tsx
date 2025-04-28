@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import acmeLogo from "@/assets/logo-acme.png";
 import quantumLogo from "@/assets/logo-quantum.png";
 import echoLogo from "@/assets/logo-echo.png";

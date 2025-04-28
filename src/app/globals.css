@@ -5,5 +5,8 @@
 }
 
 .testimonial-fade {
-  @apply [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]
+  @apply [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_75%,transparent)]
 }
+
+
+  
