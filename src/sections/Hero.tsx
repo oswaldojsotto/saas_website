@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import Button from "@/components/Button";
 import ArrowRight from "@/assets/arrow-right.svg";
 import CogImage from "@/assets/cog.png";
-import Image from "next/image";
 import Cylinder from "@/assets/cylinder.png";
 import Noodle from "@/assets/noodle.png";
 import {
