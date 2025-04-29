@@ -12,9 +12,7 @@ import { ReactLenis, useLenis } from "lenis/react";
 
 export default function Home() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  });
+  const lenis = useLenis(({ scroll }) => {});
   return (
     <ReactLenis root>
       <Header />

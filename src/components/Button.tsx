@@ -14,7 +14,7 @@ const Button = ({
 }: Props) => {
   return (
     <div
-      className={`gap-2 antialiased cursor-pointer py-2 tracking-tight px-4 flex justify-center items-center   rounded-xl  ${
+      className={`gap-2 antialiased cursor-pointer py-2 tracking-tight px-4 flex justify-center items-center rounded-xl  ${
         style === "black" && "bg-black text-white"
       } ${style === "white" && "bg-white text-black"} ${
         style === "trasparent" &&
