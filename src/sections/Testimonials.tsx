@@ -13,10 +13,10 @@ const Testimonials = () => {
   const secondColumn = testimonialsData.slice(3, 6);
   const thirdColumn = testimonialsData.slice(6, 9);
 
-  const firstColumnRef = React.useRef(null);
+  const animRef = React.useRef(null);
 
   const { scrollYProgress } = useScroll({
-    target: firstColumnRef,
+    target: animRef,
     offset: ["start end", "end start"],
   });
 
@@ -44,7 +44,7 @@ const Testimonials = () => {
       <div className="flex justify-center h-[600px] items-center flex-col md:flex-row px-4 md:justify-evenly testimonial-fade">
         <div
           className="relative h-auto overflow-hidden"
-          ref={firstColumnRef}>
+          ref={animRef}>
           {" "}
           <motion.div
             className="md:hidden"

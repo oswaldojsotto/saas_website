@@ -6,7 +6,11 @@ import Twitter from "@/assets/social-x.svg";
 import Pinterest from "@/assets/social-pin.svg";
 import Linkedin from "@/assets/social-linkedin.svg";
 import Youtube from "@/assets/social-youtube.svg";
+
 const Footer = () => {
+  const figmaUrl =
+    "https://www.figma.com/design/BzFedW8FJ5pm3UarwfyaLt/SaaS-Website-UI-Kit-%E2%80%94-Framer-Website-Kit--Community-?node-id=2012-608&p=f&t=Me96zvVgk9fUdB6L-0";
+
   return (
     <footer className="bg-black px-4">
       <section className="flex flex-col md:flex-row justify-between">
@@ -73,6 +77,26 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      <div className="bg-white/10 text-white py-2 rounded-t-2xl px-2 text-sm flex justify-center md:justify-between">
+        <p className="hidden md:block">
+          Design by:{" "}
+          <a
+            href={figmaUrl}
+            target="_blank"
+            className="text-blue-800 hover:underline">
+            _Framer Motion
+          </a>
+        </p>
+        <p>
+          Code by:{" "}
+          <a
+            href="https://www.oswaldo.site"
+            target="_blank"
+            className="text-blue-800 hover:underline">
+            _Oswaldo J. Sotto
+          </a>
+        </p>
+      </div>
     </footer>
   );
 };
