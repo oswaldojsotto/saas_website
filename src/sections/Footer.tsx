@@ -77,8 +77,8 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="bg-white/10 text-white py-2 rounded-t-2xl px-2 text-sm flex justify-between">
-        <p>
+      <div className="bg-white/10 text-white py-2 rounded-t-2xl px-2 text-sm flex justify-center md:justify-between">
+        <p className="hidden md:block">
           Design by:{" "}
           <a
             href={figmaUrl}
